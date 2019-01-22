@@ -5,16 +5,15 @@
 var array = [];
 
 
-
-
 $(document).ready(function() {
   $("form").submit(function(){
+
     console.log("yo1");
-    let question1 = array.push($('#question1Input').val());
-    let question2 = array.push($('#question2Input').val());
-    let question3 = array.push($('#question3Input').val());
-    let question4 = array.push($('#question4Input').val());
-    let question5 = array.push($('#question5Input').val());
+    array.push($('input#question1').val());
+    array.push($('input#question2').val());
+    array.push($('input#question3').val());
+    array.push($('input#question4').val());
+    array.push($('input#question5').val());
 
     console.log("yo2");
 
@@ -30,9 +29,26 @@ $(document).ready(function() {
     $(".display-sport").text("your favorite sport is " + array[3]);
 
     $(".display-music").text("your favorite music is " + array[4]);
-    console.log("4")
 
     event.preventDefault();
 
   });
 });
+
+
+//
+
+
+
+// var blanks = ["display-food", "display-book","display-color","display-sport","display-music"];
+//
+// console.log("2");
+//
+//
+// blanks.forEach(function(bb){
+//   var userInput = $("input#" + bb).val();
+//   $("div." + blank).text(userInput);
+// });
+//
+//
+// console.log("4")
