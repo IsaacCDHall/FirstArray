@@ -2,33 +2,28 @@
 // function combine(question1, question2, question3, question4, question5) {
 //   (question1 + question2 + question3 + question4 + question5)
 // };
-var array = [];
+
+
+
+
+// var array = [];
 
 
 $(document).ready(function() {
   $("form").submit(function(){
 
-    console.log("yo1");
-    array.push($('input#question1').val());
-    array.push($('input#question2').val());
-    array.push($('input#question3').val());
-    array.push($('input#question4').val());
-    array.push($('input#question5').val());
+    var blanks = ["question1", "question2","question3","question4","question5"];
 
-    console.log("yo2");
+    console.log("2");
 
-    // array.push(question1, question2, question3, question4, question5);
-    console.log("yo3");
 
-    // let result = ""
-    $(".display-food").text("your favorite food is " + array[0]);
-    $(".display-book").text("your favorite book is " + array[1]);
+    blanks.forEach(function(bb){
+      var userInput = $("input#" + bb).val();
+      $("." + bb).text(userInput);
+    });
 
-    $(".display-color").text("your favorite color is " + array[2]);
 
-    $(".display-sport").text("your favorite sport is " + array[3]);
-
-    $(".display-music").text("your favorite music is " + array[4]);
+    console.log("4")
 
     event.preventDefault();
 
@@ -40,15 +35,29 @@ $(document).ready(function() {
 
 
 
-// var blanks = ["display-food", "display-book","display-color","display-sport","display-music"];
+
+
+
+
+
+// console.log("yo1");
+// array.push($('input#question1').val());
+// array.push($('input#question2').val());
+// array.push($('input#question3').val());
+// array.push($('input#question4').val());
+// array.push($('input#question5').val());
 //
-// console.log("2");
+// console.log("yo2");
 //
+// // array.push(question1, question2, question3, question4, question5);
+// console.log("yo3");
 //
-// blanks.forEach(function(bb){
-//   var userInput = $("input#" + bb).val();
-//   $("div." + blank).text(userInput);
-// });
+// // let result = ""
+// $(".display-food").text("your favorite food is " + array[0]);
+// $(".display-book").text("your favorite book is " + array[1]);
 //
+// $(".display-color").text("your favorite color is " + array[2]);
 //
-// console.log("4")
+// $(".display-sport").text("your favorite sport is " + array[3]);
+//
+// $(".display-music").text("your favorite music is " + array[4]);

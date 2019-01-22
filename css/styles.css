@@ -10,12 +10,11 @@ body{
 label{
   background-color:rgba(255, 0, 0, 0.5);
 }
-.display-food, .display-book, .display-color, .display-sport, .display-music{
+.question1, .question2, .question3, .question4, .question5 {
 background-color: rgba(255, 0, 0, 0.5);
 font-size: 2em;
 font-style: italic;
 font-weight: bold;
-
 }
 
 
