@@ -14,16 +14,21 @@ $(document).ready(function() {
 
     var blanks = ["question1", "question2","question3","question4","question5"];
 
-    console.log("2");
+    console.log(blanks);
 
 
     blanks.forEach(function(bb){
       var userInput = $("input#" + bb).val();
       $("." + bb).text(userInput);
+
+
+      var testing = ("." + bb);
+      console.log(testing);
+      console.log(userInput);
     });
 
 
-    console.log("4")
+  
 
     event.preventDefault();
 
