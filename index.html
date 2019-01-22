@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Things</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" id="header">
+        <h1>Lets check out your favorite things!</h1>
+        <p id="underline">Answer each question below</p>
+      </div>
+      <form id="form-body">
+        <div class="form-group">
+          <label for="question1">What is your favorite food?</label>
+          <input required id="question1Input" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="question2"> What is your favorite book? </label>
+          <input required id="question2Input" class="form-control"
+        </div>
+        <div class="form-group">
+          <label for="question3">What is your favorite color?</label>
+          <input required id="question3Input" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label for="question4">Favorite sport?
+          </label>
+          <input id="question4Input" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label for="question5">Favorite genre of music?</label>
+          <input required id="question5Input" class="form-control" >
+        </div>
+
+        <button type="submit" name="button">
+          <p id="buttText">
+          Click Here To See What You Like
+          </p>
+        </button>
+      </form>
+
+        <div class="display-food">
+          <br/>
+          <h4 class="cursive">Lets see food you picked! </h4>
+          <br/>
+        </div>
+        <div class="display-book">
+          <br/>
+          <h4 class="cursive">Lets see book you picked! </h4>
+          <br/>
+        </div>
+        <div class="display-color">
+          <br/>
+          <h4 class="cursive">Lets see color you picked! </h4>
+          <br/>
+        </div>
+        <div class="display-sport">
+          <br/>
+          <h4 class="cursive">Lets see sport you picked! </h4>
+          <br/>
+        </div>
+        <div class="display-music">
+          <br/>
+          <h4 class="cursive">Lets see what kind of music you picked! </h4>
+          <br/>
+        </div>
+
+
+    </div>
+    <br id="long-break"/>
+  </body>
+</html>
