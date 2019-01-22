@@ -10,40 +10,21 @@
 
 
 $(document).ready(function() {
-  $("form").submit(function(){
-
+  $("form").submit(function(event){
     var blanks = ["question1", "question2","question3","question4","question5"];
-
     console.log(blanks);
-
-
     blanks.forEach(function(bb){
+      //below gives us a value for each input form submission by targetting the input form + id
       var userInput = $("input#" + bb).val();
+      //below "." calls that class to then manipulate dom to display text of their input there
       $("." + bb).text(userInput);
-
-
       var testing = ("." + bb);
       console.log(testing);
       console.log(userInput);
     });
-
-
-  
-
     event.preventDefault();
-
   });
 });
-
-
-//
-
-
-
-
-
-
-
 
 // console.log("yo1");
 // array.push($('input#question1').val());
